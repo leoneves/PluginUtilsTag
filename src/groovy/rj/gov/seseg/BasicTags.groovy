@@ -46,66 +46,51 @@ abstract class BasicTags {
     }
 
 
-    //envolverEmJquery , envolverEmSeseg , aSelecaoDoObjeto , valorSelecaoQuery , recebeAFuncao , funcaoScript
+    //envolverEmJquery , envolverEmSeseg , aSelecaoDoObjeto , valorSelecaoQuery , recebeAFuncao , funcaoScript, out
     def envolverEmJavascript = { Object[] args ->
+        def out = args[args.length-1]
+        String retorno
 
         def identificacaoInicioScript = "<script type=\"text/javascript\">"
         def identificacaoTerminoScript = "</script>"
         //passando todos os parametros
-        if (args.length == 6){
-            """
-                ${identificacaoInicioScript}
-                    ${args[0].call( args[1].call(args[2].call(args[3]), args[4].call(args[5])) )}
-                ${identificacaoTerminoScript}
-            """
+        if (args.length == 7){
+            retorno = """${identificacaoInicioScript}${args[0].call( args[1].call(args[2].call(args[3]), args[4].call(args[5])) )}${identificacaoTerminoScript}"""
         }
         /*  envolverEmJavascript envolverEmSeseg, aSelecaoDoObjeto, ".teste", recebeAFuncao, "recebeFoco()"
             envolverEmJavascript envolverEmJquery, aSelecaoDoObjeto, ".teste", recebeAFuncao, "recebeFoco()" */
-        else if (args.length == 5) {
+        else if (args.length == 6) {
             if (args[0].class.name.equals(envolverEmSeseg.class.name) ){
-                """
-                    ${identificacaoInicioScript}
-                        ${ args[0].call(args[1].call(args[2]), args[3].call(args[4])) }
-                    ${identificacaoTerminoScript}
-                """
+                retorno = """${identificacaoInicioScript}${ args[0].call(args[1].call(args[2]), args[3].call(args[4])) }${identificacaoTerminoScript}"""
             }
             else if( (args[0].class.name.equals(envolverEmJquery.class.name)) && (!args[1].class.name.equals(envolverEmSeseg.class.name)) ){
                 def script = """${args[1].call(args[2]) }.${args[3].call(args[4])}"""
-                """
-                    ${identificacaoInicioScript}
-                        ${ args[0].call(script) }
-                    ${identificacaoTerminoScript}
-                """
-
+                retorno = """${identificacaoInicioScript}${ args[0].call(script) }${identificacaoTerminoScript}"""
             }
             else if( (args[0].class.name.equals(envolverEmJquery.class.name)) && (args[1].class.name.equals(envolverEmSeseg.class.name)) ){
-                """
-                    ${identificacaoInicioScript}
-                        ${ args[0].call( args[1].call( args[2], args[3].call(args[4]) ) ) }
-                    ${identificacaoTerminoScript}
-                """
+                retorno = """${identificacaoInicioScript}${ args[0].call( args[1].call( args[2], args[3].call(args[4]) ) ) }${identificacaoTerminoScript}"""
             }
         }
-        //envolverEmJavascript envolverEmSeseg, ".teste", recebeAFuncao, "recebeFoco()"
-        else if (args.length == 4){
-            """
-                ${identificacaoInicioScript}
-                    ${args[0].call(args[1], args[2].call(args[3])) }
-                ${identificacaoTerminoScript}
-            """
+        //envolverEmJavascript envolverEmSeseg, ".teste", recebeAFuncao, "recebeFoco()", out
+        //ou envolverEmJavascript aSelecaoDoObjeto, "campo", recebeAFuncao, "focus()", out
+        else if (args.length == 5){
+            if (args[0].class.name.equals(envolverEmSeseg.class.name) ){
+                retorno = """${identificacaoInicioScript}${args[0].call(args[1], args[2].call(args[3])) }${identificacaoTerminoScript}"""
+            }
+            else if (args[0].class.name.equals(aSelecaoDoObjeto.class.name) ){
+                retorno = """${identificacaoInicioScript}${args[0].call(args[1])}.${args[2].call(args[3])}${identificacaoTerminoScript}"""
+            }
         }
+        out << retorno
     }
+
 
     def envolverEmJquery = { envolverEmQuery->
 
         def identificacaoInicioJquery = "jQuery(function(){"
         def identificacaoTerminoJquery = "});"
 
-        """
-            ${identificacaoInicioJquery}
-                ${envolverEmQuery}
-            ${identificacaoTerminoJquery}
-        """.toString()
+        """${identificacaoInicioJquery}${envolverEmQuery}${identificacaoTerminoJquery}""".toString()
 
     }
 
@@ -114,18 +99,10 @@ abstract class BasicTags {
         def identificacaoTermino = ")"
 
         if(param1 instanceof GString){
-            """
-                ${identificacaoInicio}
-                    ${param1}
-                ${identificacaoTermino}.${param2}
-            """.toString()
+            """${identificacaoInicio}${param1}${identificacaoTermino}.${param2}""".toString()
         }
         else if(param1 instanceof String){
-            """
-                ${identificacaoInicio}
-                    '${param1}'
-                ${identificacaoTermino}.${param2}
-            """.toString()
+            """${identificacaoInicio}'${param1}'${identificacaoTermino}.${param2}""".toString()
         }
     }
 
@@ -133,11 +110,7 @@ abstract class BasicTags {
         def identificacaoInicio = "jQuery('"
         def identificacaoTermino = "')"
 
-        """
-            ${identificacaoInicio}
-                ${obj}
-            ${identificacaoTermino}
-        """
+        """${identificacaoInicio}${obj}${identificacaoTermino}"""
     }
 
     def recebeAFuncao = { String funcaoScript ->

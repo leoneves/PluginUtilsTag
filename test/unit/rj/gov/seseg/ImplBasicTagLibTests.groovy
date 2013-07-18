@@ -144,9 +144,7 @@ class ImplBasicTagLibTests {
         def identificacaoTermino = "')"
 
         """
-            ${identificacaoInicio}
-                ${obj}
-            ${identificacaoTermino}
+            ${identificacaoInicio}${obj}${identificacaoTermino}
         """
     }
 

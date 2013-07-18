@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e649b95-1bc0-4399-ae4c-4c06435ecb3b" name="Default" comment="" />
+    <list default="true" id="1e649b95-1bc0-4399-ae4c-4c06435ecb3b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/auxCriacaoTags-grailsPlugins.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AuxCriacaoTagsGrailsPlugin.groovy" afterPath="$PROJECT_DIR$/AuxCriacaoTagsGrailsPlugin.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/rj/gov/seseg/BasicTags.groovy" afterPath="$PROJECT_DIR$/src/groovy/rj/gov/seseg/BasicTags.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/rj/gov/seseg/ImplBasicTagLibTests.groovy" afterPath="$PROJECT_DIR$/test/unit/rj/gov/seseg/ImplBasicTagLibTests.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/auxCriacaoTags.iml" afterPath="$PROJECT_DIR$/auxCriacaoTags.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="auxCriacaoTags.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
@@ -13,9 +22,19 @@
     <file path="/ImpLTesteTagLib.groovy" changelist="1e649b95-1bc0-4399-ae4c-4c06435ecb3b" time="1374005977619" ignored="false" />
     <file path="/BasicTagLibTests.groovy" changelist="1e649b95-1bc0-4399-ae4c-4c06435ecb3b" time="1374006684446" ignored="false" />
     <file path="/fragment.java" changelist="1e649b95-1bc0-4399-ae4c-4c06435ecb3b" time="1374007007201" ignored="false" />
-    <file path="/Dummy.txt" changelist="1e649b95-1bc0-4399-ae4c-4c06435ecb3b" time="1374007007201" ignored="false" />
+    <file path="/Dummy.txt" changelist="1e649b95-1bc0-4399-ae4c-4c06435ecb3b" time="1374178169072" ignored="false" />
     <file path="/ImplBasicTagLib.groovy" changelist="1e649b95-1bc0-4399-ae4c-4c06435ecb3b" time="1374006949569" ignored="false" />
     <file path="/ImplBasicTagLibTests.groovy" changelist="1e649b95-1bc0-4399-ae4c-4c06435ecb3b" time="1374094127274" ignored="false" />
+    <file path="/a.dummy" changelist="1e649b95-1bc0-4399-ae4c-4c06435ecb3b" time="1374178165331" ignored="false" />
+    <file path="$PROJECT_DIR$/../testeJQueryUIKnockout/grails-app/taglib/testeJQueryUIKnockout/RecebeFocoTagLib.groovy" changelist="1e649b95-1bc0-4399-ae4c-4c06435ecb3b" time="1374177944184" ignored="false" />
+    <file path="/RecebeFocoTagLib.groovy" changelist="1e649b95-1bc0-4399-ae4c-4c06435ecb3b" time="1374176313784" ignored="false" />
+    <file path="$PROJECT_DIR$/../testeJQueryUIKnockout/grails-app/views/buscaPessoa/index.gsp" changelist="1e649b95-1bc0-4399-ae4c-4c06435ecb3b" time="1374171400586" ignored="false" />
+    <file path="$PROJECT_DIR$/../testeJQueryUIKnockout/application.properties" changelist="1e649b95-1bc0-4399-ae4c-4c06435ecb3b" time="1374173038481" ignored="false" />
+    <file path="/index.gsp" changelist="1e649b95-1bc0-4399-ae4c-4c06435ecb3b" time="1374171381621" ignored="false" />
+    <file path="$PROJECT_DIR$/../testeJQueryUIKnockout/target/stacktrace.log" changelist="1e649b95-1bc0-4399-ae4c-4c06435ecb3b" time="1374177663888" ignored="false" />
+    <file path="/BasicTags.groovy" changelist="1e649b95-1bc0-4399-ae4c-4c06435ecb3b" time="1374178046506" ignored="false" />
+    <file path="$PROJECT_DIR$/../testeJQueryUIKnockout/grails-app/views/index.gsp" changelist="1e649b95-1bc0-4399-ae4c-4c06435ecb3b" time="1374176595292" ignored="false" />
+    <file path="$USER_HOME$/.grails/2.2.3/projects/testeJQueryUIKnockout/plugins/aux-criacao-tags-0.2/src/groovy/rj/gov/seseg/BasicTags.groovy" changelist="1e649b95-1bc0-4399-ae4c-4c06435ecb3b" time="1374177989501" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +42,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -74,31 +98,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BasicTags.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BasicTags.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/groovy/rj/gov/seseg/BasicTags.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="28" selection-start="3792" selection-end="3792" vertical-scroll-proportion="0.0">
+            <state line="45" column="23" selection-start="1439" selection-end="1439" vertical-scroll-proportion="0.2549575">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImplBasicTagLib.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/taglib/rj/gov/seseg/ImplBasicTagLib.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="40" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImplBasicTagLibTests.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/unit/rj/gov/seseg/ImplBasicTagLibTests.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="156" column="24" selection-start="0" selection-end="5394" vertical-scroll-proportion="4.2294617">
-              <folding>
-                <element signature="e#24#50#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -109,6 +113,14 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -121,8 +133,9 @@
         <option value="$PROJECT_DIR$/src/groovy/rj/gov/seseg/BasicTagLib.groovy" />
         <option value="$PROJECT_DIR$/test/unit/rj/gov/seseg/BasicTagLibTests.groovy" />
         <option value="$PROJECT_DIR$/grails-app/taglib/rj/gov/seseg/ImplBasicTagLib.groovy" />
-        <option value="$PROJECT_DIR$/src/groovy/rj/gov/seseg/BasicTags.groovy" />
         <option value="$PROJECT_DIR$/test/unit/rj/gov/seseg/ImplBasicTagLibTests.groovy" />
+        <option value="$PROJECT_DIR$/AuxCriacaoTagsGrailsPlugin.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/rj/gov/seseg/BasicTags.groovy" />
       </list>
     </option>
   </component>
@@ -167,7 +180,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -178,62 +191,7 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auxCriacaoTags" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auxCriacaoTags" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auxCriacaoTags" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auxCriacaoTags" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auxCriacaoTags" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auxCriacaoTags" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auxCriacaoTags" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/groovy/rj/gov/seseg" />
@@ -438,8 +396,8 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -447,24 +405,24 @@
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32993197" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32954547" sideWeight="0.670068" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.670068" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32993197" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -527,47 +485,55 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/grails-2.2.3/src/grails-plugin-testing-2.2.3-sources.jar!/grails/test/mixin/web/GroovyPageUnitTestMixin.groovy">
+    <entry file="file://$PROJECT_DIR$/src/groovy/rj/gov/seseg/BasicTags.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="0" selection-start="3152" selection-end="3152" vertical-scroll-proportion="0.33144477">
+        <state line="96" column="4" selection-start="3817" selection-end="3817" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/grails-2.2.3/src/grails-plugin-testing-2.2.3-sources.jar!/grails/test/mixin/web/GroovyPageUnitTestMixin.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="0" selection-start="3152" selection-end="3152" vertical-scroll-proportion="0.33144477" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/grails-2.2.3/lib/org.codehaus.groovy/groovy-all/jars/groovy-all-2.0.8.jar!/groovy/lang/GString.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="163" selection-end="163" vertical-scroll-proportion="0.24590164">
-          <folding />
-        </state>
+        <state line="6" column="22" selection-start="163" selection-end="163" vertical-scroll-proportion="0.24590164" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/grails-2.2.3/lib/org.codehaus.groovy/groovy-all/jars/groovy-all-2.0.8.jar!/org/codehaus/groovy/runtime/GStringImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="49" selection-start="206" selection-end="206" vertical-scroll-proportion="0.21994135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/groovy/rj/gov/seseg/BasicTags.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="28" selection-start="3792" selection-end="3792" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="49" selection-start="206" selection-end="206" vertical-scroll-proportion="0.21994135" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/taglib/rj/gov/seseg/ImplBasicTagLib.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="40" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
+        <state line="2" column="40" selection-start="62" selection-end="62" vertical-scroll-proportion="0.08196721">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/rj/gov/seseg/ImplBasicTagLibTests.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="24" selection-start="0" selection-end="5394" vertical-scroll-proportion="4.2294617">
+        <state line="121" column="32" selection-start="4342" selection-end="4342" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#24#50#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AuxCriacaoTagsGrailsPlugin.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="22" selection-start="83" selection-end="83" vertical-scroll-proportion="0.05357143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/rj/gov/seseg/BasicTags.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="23" selection-start="1439" selection-end="1439" vertical-scroll-proportion="0.2549575">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -579,6 +545,7 @@
           <value>
             <GrailsSettings>
               <option name="buildConfigCrc" value="-199066759" />
+              <option name="pluginDependenciesCrc" value="762165528" />
               <option name="properties">
                 <map>
                   <entry key="grails.global.plugins.dir" value="$USER_HOME$/.grails/2.2.3/global-plugins" />
@@ -588,6 +555,11 @@
                 </map>
               </option>
             </GrailsSettings>
+          </value>
+        </entry>
+        <entry key="auxCriacaoTags-grailsPlugins">
+          <value>
+            <GrailsSettings />
           </value>
         </entry>
       </map>
