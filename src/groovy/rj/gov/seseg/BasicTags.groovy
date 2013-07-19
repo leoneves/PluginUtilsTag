@@ -10,10 +10,11 @@ abstract class BasicTags {
     private static final String CLOSE_TAG = "</%s>"
 
 
-    def criarTag(String tagName, String type) {
+    def criarTag(String tagName, String type, String id) {
         StringBuffer out = new StringBuffer()
         out.append(String.format(OPEN_TAG, tagName))
         out.append(criaAtributo("type", type))
+        out.append(criaAtributo("id", id))
         return out
     }
 
@@ -45,6 +46,29 @@ abstract class BasicTags {
         "${scheme}://${serverName}:${serverPort}${contextPath}/${controller}/${action}"
     }
 
+    /*
+    ForceId caso seja true a tag vai ficar com o id que o usuário passou, se não vai gerar e concatenar
+     */
+    def gerarID = { id, forcedId ->
+        if(!forcedId){
+            id =  id?id:""
+            System.nanoTime() + "_" + id
+        }
+        else
+            id
+    }
+
+    def criaAtributos(attrs){
+        StringBuffer out = new StringBuffer()
+        int ultimo = attrs.size()-1
+        attrs.eachWithIndex {k, v, i ->
+            if (i != ultimo)
+                out.append(criaAtributo(k,v))
+            else
+                out.append(criaAtributoFinal(k,v))
+        }
+        return out
+    }
 
     //envolverEmJquery , envolverEmSeseg , aSelecaoDoObjeto , valorSelecaoQuery , recebeAFuncao , funcaoScript, out
     def envolverEmJavascript = { Object[] args ->
